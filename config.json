@@ -24,7 +24,7 @@
   "links": [
     {
       "label": "Home",
-      "url": "localhost:3000"
+      "url": "https://willsmckenna.github.io/landingpage/"
     }
   ],
   "widgetOnScreen": {
@@ -239,7 +239,7 @@
         "widgets": [
           {
             "name": "Infographic",
-            "label": "Infographic_7",
+            "label": "Doses Per Day",
             "version": "2.18",
             "uri": "widgets/Infographic/Widget",
             "config": "configs/Infographic/config_widgets_Infographic_Widget_46.json",
@@ -273,7 +273,7 @@
         "widgets": [
           {
             "name": "Infographic",
-            "label": "Infographic_6",
+            "label": "Vaccination Sites Per Zip Code",
             "version": "2.18",
             "uri": "widgets/Infographic/Widget",
             "config": "configs/Infographic/config_widgets_Infographic_Widget_44.json",
@@ -290,7 +290,7 @@
         "widgets": [
           {
             "name": "Infographic",
-            "label": "Infographic_8",
+            "label": "Total Series Completed",
             "version": "2.18",
             "uri": "widgets/Infographic/Widget",
             "config": "configs/Infographic/config_widgets_Infographic_Widget_47.json",
@@ -310,7 +310,8 @@
             "version": "2.18",
             "uri": "widgets/Query/Widget",
             "config": "configs/Query/config_widgets_Query_Widget_48.json",
-            "id": "widgets_Query_Widget_48"
+            "id": "widgets_Query_Widget_48",
+            "label": "Find a Vaccination Clinic"
           }
         ],
         "placeholderIndex": 1,
@@ -1158,7 +1159,7 @@
                         "title": "",
                         "width": 41.632088520055326,
                         "activeItemIndex": 0,
-                        "height": 28.159725360214356,
+                        "height": 30.520420899394,
                         "isClosable": true,
                         "content": []
                       },
@@ -1167,7 +1168,7 @@
                         "reorderEnabled": true,
                         "title": "",
                         "id": "dd_group_8",
-                        "height": 40.8063086058196,
+                        "height": 38.44561306663996,
                         "activeItemIndex": 0,
                         "isClosable": true,
                         "content": []
@@ -1196,7 +1197,7 @@
                         "reorderEnabled": true,
                         "title": "",
                         "id": "map",
-                        "height": 64.21404682274247,
+                        "height": 69.23076923076923,
                         "activeItemIndex": 0,
                         "isClosable": true,
                         "content": [
@@ -1216,7 +1217,7 @@
                         "title": "",
                         "width": 50,
                         "activeItemIndex": 0,
-                        "height": 35.785953177257525,
+                        "height": 30.76923076923077,
                         "isClosable": true,
                         "content": []
                       }
