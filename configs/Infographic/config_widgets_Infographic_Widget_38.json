@@ -1,0 +1,191 @@
+{
+  "layout": {
+    "definition": [
+      {
+        "type": "column",
+        "isClosable": true,
+        "reorderEnabled": true,
+        "title": "",
+        "width": 100,
+        "content": [
+          {
+            "type": "stack",
+            "isClosable": true,
+            "reorderEnabled": true,
+            "title": "",
+            "activeItemIndex": 0,
+            "height": 20.209059233449477,
+            "content": [
+              {
+                "type": "component",
+                "isClosable": true,
+                "componentName": "jimu grid",
+                "componentState": {
+                  "id": "8648233971564458-1"
+                },
+                "reorderEnabled": true,
+                "title": "jimu grid",
+                "id": "8648233971564458-1"
+              }
+            ]
+          },
+          {
+            "type": "stack",
+            "isClosable": true,
+            "reorderEnabled": true,
+            "title": "",
+            "activeItemIndex": 0,
+            "height": 79.79094076655052,
+            "content": [
+              {
+                "type": "component",
+                "isClosable": true,
+                "componentName": "jimu grid",
+                "componentState": {
+                  "id": "8648233971564458-2"
+                },
+                "reorderEnabled": true,
+                "title": "jimu grid",
+                "id": "8648233971564458-2"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "dijits": [
+    {
+      "id": "8648233971564458-1",
+      "type": "text",
+      "visible": true,
+      "config": {
+        "background": {
+          "backgroundColor": "#222222",
+          "alignment": {
+            "horizontal": "center",
+            "vertical": "middle"
+          },
+          "link": ""
+        },
+        "font": {
+          "font": {
+            "fontFamily": "Arial",
+            "bold": false,
+            "italic": false,
+            "underline": false
+          },
+          "fontSize": 16,
+          "textColor": "#fff"
+        },
+        "text": "TOTAL VACCINATIONS BY ZIPCODE"
+      }
+    },
+    {
+      "id": "8648233971564458-2",
+      "type": "chart",
+      "visible": true,
+      "config": {
+        "data": {
+          "mode": "category",
+          "type": "bar",
+          "clusterField": "zip_code",
+          "valueFields": [
+            "total_doses_daily"
+          ],
+          "operation": "sum",
+          "nullValue": true,
+          "sortOrder": {
+            "isAsc": true,
+            "field": "total_doses_daily",
+            "isLabelAxis": "on"
+          }
+        },
+        "display": {
+          "backgroundColor": "#222222",
+          "seriesStyle": {
+            "type": "series",
+            "styles": [
+              {
+                "style": {
+                  "color": [
+                    "#68d2e0"
+                  ]
+                },
+                "name": "total_doses_daily",
+                "label": "total_doses_daily"
+              }
+            ]
+          },
+          "legend": {
+            "textStyle": {
+              "color": "#ffffff",
+              "fontSize": 12
+            },
+            "show": false
+          },
+          "displayRange": "ALL",
+          "xAxis": {
+            "textStyle": {
+              "color": "#ffffff",
+              "fontSize": 12
+            },
+            "show": true,
+            "format": {
+              "type": "float",
+              "digitSeparator": true
+            }
+          },
+          "yAxis": {
+            "textStyle": {
+              "color": "#ffffff",
+              "fontSize": 12
+            },
+            "show": true,
+            "format": {}
+          },
+          "tooltip": {
+            "confine": true,
+            "trigger": "axis"
+          },
+          "marks": {}
+        }
+      }
+    },
+    {
+      "id": "8648233971564458-3",
+      "type": "text",
+      "visible": false,
+      "config": {
+        "background": {
+          "backgroundColor": "#222222",
+          "alignment": {
+            "horizontal": "center",
+            "vertical": "top"
+          },
+          "link": ""
+        },
+        "font": {
+          "font": {
+            "fontFamily": "Arial",
+            "bold": false,
+            "italic": false,
+            "underline": false
+          },
+          "fontSize": 12,
+          "textColor": "#fff"
+        },
+        "text": "Description: additional information about this infographic."
+      }
+    }
+  ],
+  "name": "bar",
+  "wid": "8648233971564458",
+  "dataSource": {
+    "dataSourceType": "DATA_SOURCE_FEATURE_LAYER_FROM_MAP",
+    "name": "COVID-19 Vaccinations- CSV",
+    "layerId": "b1d8b389-f5fd-4539-9871-fa48c33e091c",
+    "useSelection": true,
+    "filterByExtent": false
+  }
+}
