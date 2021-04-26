@@ -252,6 +252,14 @@
             "uri": "widgets/Infographic/Widget",
             "config": "configs/Infographic/config_widgets_Infographic_Widget_53.json",
             "id": "widgets_Infographic_Widget_53"
+          },
+          {
+            "name": "About",
+            "label": "Data Sources",
+            "version": "2.18",
+            "uri": "widgets/About/Widget",
+            "config": "configs/About/config_widgets_About_Widget_54.json",
+            "id": "widgets_About_Widget_54"
           }
         ],
         "placeholderIndex": 1,
