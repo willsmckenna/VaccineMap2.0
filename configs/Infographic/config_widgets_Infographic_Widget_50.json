@@ -14,18 +14,18 @@
             "reorderEnabled": true,
             "title": "",
             "activeItemIndex": 0,
-            "height": 21.951219512195124,
+            "height": 20.209059233449477,
             "content": [
               {
                 "type": "component",
                 "isClosable": true,
                 "componentName": "jimu grid",
                 "componentState": {
-                  "id": "7327873969455561-1"
+                  "id": "9854074440418148-1"
                 },
                 "reorderEnabled": true,
                 "title": "jimu grid",
-                "id": "7327873969455561-1"
+                "id": "9854074440418148-1"
               }
             ]
           },
@@ -35,18 +35,18 @@
             "reorderEnabled": true,
             "title": "",
             "activeItemIndex": 0,
-            "height": 78.04878048780488,
+            "height": 79.79094076655052,
             "content": [
               {
                 "type": "component",
                 "isClosable": true,
                 "componentName": "jimu grid",
                 "componentState": {
-                  "id": "7327873969455561-2"
+                  "id": "9854074440418148-2"
                 },
                 "reorderEnabled": true,
                 "title": "jimu grid",
-                "id": "7327873969455561-2"
+                "id": "9854074440418148-2"
               }
             ]
           }
@@ -56,7 +56,7 @@
   },
   "dijits": [
     {
-      "id": "7327873969455561-1",
+      "id": "9854074440418148-1",
       "type": "text",
       "visible": true,
       "config": {
@@ -78,30 +78,25 @@
           "fontSize": 16,
           "textColor": "#fff"
         },
-        "text": "DOSES PER DAY"
+        "text": "TOTAL DOSES MALE/FEMALE"
       }
     },
     {
-      "id": "7327873969455561-2",
+      "id": "9854074440418148-2",
       "type": "chart",
       "visible": true,
       "config": {
         "data": {
-          "mode": "category",
-          "type": "line",
-          "clusterField": "date",
-          "dateConfig": {
-            "minPeriod": "automatic",
-            "isNeedFilled": true
-          },
+          "mode": "field",
+          "type": "column",
           "valueFields": [
-            "total_doses_daily"
+            "Total_Doses___Daily___Female",
+            "Total_Doses___Daily___Male"
           ],
           "operation": "sum",
           "nullValue": true,
           "sortOrder": {
             "isAsc": true,
-            "field": "total_doses_daily",
             "isLabelAxis": "on"
           }
         },
@@ -113,11 +108,20 @@
               {
                 "style": {
                   "color": [
-                    "#ff8c00"
+                    "#087e92"
                   ]
                 },
-                "name": "total_doses_daily",
-                "label": "total_doses_daily"
+                "name": "Total_Doses___Daily___Female",
+                "label": "Total Doses - Daily - Female"
+              },
+              {
+                "style": {
+                  "color": [
+                    "#47bcf5"
+                  ]
+                },
+                "name": "Total_Doses___Daily___Male",
+                "label": "Total Doses - Daily - Male"
               }
             ]
           },
@@ -128,7 +132,7 @@
             },
             "show": false
           },
-          "displayRange": "ALL",
+          "displayRange": "AUTO",
           "xAxis": {
             "textStyle": {
               "color": "#ffffff",
@@ -157,7 +161,7 @@
       }
     },
     {
-      "id": "7327873969455561-3",
+      "id": "9854074440418148-3",
       "type": "text",
       "visible": false,
       "config": {
@@ -183,13 +187,13 @@
       }
     }
   ],
-  "name": "line",
-  "wid": "7327873969455561",
+  "name": "column",
+  "wid": "9854074440418148",
   "dataSource": {
-    "dataSourceType": "DATA_SOURCE_FEATURE_LAYER_FROM_MAP",
-    "name": "COVID-19 Vaccinations- CSV",
-    "layerId": "b1d8b389-f5fd-4539-9871-fa48c33e091c",
-    "useSelection": true,
-    "filterByExtent": "on"
+    "dataSourceType": "DATA_SOURCE_FROM_FRAMEWORK",
+    "name": "COVID_19_Vaccination_and_related_demographic_data - COVID_19_Vaccination_and_related_demographic_data",
+    "frameWorkDsId": "map~COVID_19_Vaccination_and_related_demographic_data_6052~6256868376564297",
+    "useSelection": false,
+    "filterByExtent": false
   }
 }

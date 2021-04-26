@@ -14,18 +14,18 @@
             "reorderEnabled": true,
             "title": "",
             "activeItemIndex": 0,
-            "height": 26.048476918947934,
+            "height": 20.905923344947734,
             "content": [
               {
                 "type": "component",
                 "isClosable": true,
                 "componentName": "jimu grid",
                 "componentState": {
-                  "id": "7020515154872913-1"
+                  "id": "45541550092689254-1"
                 },
                 "reorderEnabled": true,
                 "title": "jimu grid",
-                "id": "7020515154872913-1"
+                "id": "45541550092689254-1"
               }
             ]
           },
@@ -35,18 +35,18 @@
             "reorderEnabled": true,
             "title": "",
             "activeItemIndex": 0,
-            "height": 73.95152308105207,
+            "height": 79.09407665505226,
             "content": [
               {
                 "type": "component",
                 "isClosable": true,
                 "componentName": "jimu grid",
                 "componentState": {
-                  "id": "7020515154872913-2"
+                  "id": "45541550092689254-2"
                 },
                 "reorderEnabled": true,
                 "title": "jimu grid",
-                "id": "7020515154872913-2"
+                "id": "45541550092689254-2"
               }
             ]
           }
@@ -56,7 +56,7 @@
   },
   "dijits": [
     {
-      "id": "7020515154872913-1",
+      "id": "45541550092689254-1",
       "type": "text",
       "visible": true,
       "config": {
@@ -78,18 +78,29 @@
           "fontSize": 16,
           "textColor": "#fff"
         },
-        "text": "NUMBER OF VACCINATION SITES PER ZIPCODE"
+        "text": "TOTAL DOSES BY AGE"
       }
     },
     {
-      "id": "7020515154872913-2",
+      "id": "45541550092689254-2",
       "type": "chart",
       "visible": true,
       "config": {
         "data": {
-          "mode": "count",
+          "mode": "field",
           "type": "column",
-          "clusterField": "Postal_Code",
+          "valueFields": [
+            "Total_Doses___Daily___Age_0_17",
+            "Total_Doses___Daily___Age_18_29",
+            "Total_Doses___Daily___Age_30_39",
+            "Total_Doses___Daily___Age_40_49",
+            "Total_Doses___Daily___Age_50_59",
+            "Total_Doses___Daily___Age_60_69",
+            "Total_Doses___Daily___Age_70_79",
+            "Total_Doses___Daily___Age_80_"
+          ],
+          "operation": "sum",
+          "nullValue": true,
           "sortOrder": {
             "isAsc": true,
             "isLabelAxis": "on"
@@ -103,11 +114,74 @@
               {
                 "style": {
                   "color": [
-                    "#32cd32"
+                    "#c4eef6"
                   ]
                 },
-                "name": "count~count",
-                "label": "count~count"
+                "name": "Total_Doses___Daily___Age_0_17",
+                "label": "Total Doses - Daily - Age 0-17"
+              },
+              {
+                "style": {
+                  "color": [
+                    "#68d2e0"
+                  ]
+                },
+                "name": "Total_Doses___Daily___Age_18_29",
+                "label": "Total Doses - Daily - Age 18-29"
+              },
+              {
+                "style": {
+                  "color": [
+                    "#087e92"
+                  ]
+                },
+                "name": "Total_Doses___Daily___Age_30_39",
+                "label": "Total Doses - Daily - Age 30-39"
+              },
+              {
+                "style": {
+                  "color": [
+                    "#47bcf5"
+                  ]
+                },
+                "name": "Total_Doses___Daily___Age_40_49",
+                "label": "Total Doses - Daily - Age 40-49"
+              },
+              {
+                "style": {
+                  "color": [
+                    "#fbe66a"
+                  ]
+                },
+                "name": "Total_Doses___Daily___Age_50_59",
+                "label": "Total Doses - Daily - Age 50-59"
+              },
+              {
+                "style": {
+                  "color": [
+                    "#f29157"
+                  ]
+                },
+                "name": "Total_Doses___Daily___Age_60_69",
+                "label": "Total Doses - Daily - Age 60-69"
+              },
+              {
+                "style": {
+                  "color": [
+                    "#c8501d"
+                  ]
+                },
+                "name": "Total_Doses___Daily___Age_70_79",
+                "label": "Total Doses - Daily - Age 70-79"
+              },
+              {
+                "style": {
+                  "color": [
+                    "#2db7c6"
+                  ]
+                },
+                "name": "Total_Doses___Daily___Age_80_",
+                "label": "Total Doses - Daily - Age 80+"
               }
             ]
           },
@@ -118,16 +192,14 @@
             },
             "show": false
           },
-          "displayRange": "ALL",
+          "displayRange": "AUTO",
           "xAxis": {
             "textStyle": {
               "color": "#ffffff",
               "fontSize": 12
             },
             "show": true,
-            "format": {
-              "digitSeparator": false
-            }
+            "format": {}
           },
           "yAxis": {
             "textStyle": {
@@ -149,7 +221,7 @@
       }
     },
     {
-      "id": "7020515154872913-3",
+      "id": "45541550092689254-3",
       "type": "text",
       "visible": false,
       "config": {
@@ -176,11 +248,11 @@
     }
   ],
   "name": "column",
-  "wid": "7020515154872913",
+  "wid": "45541550092689254",
   "dataSource": {
     "dataSourceType": "DATA_SOURCE_FROM_FRAMEWORK",
-    "name": "COVID-19_Vaccination_Locations",
-    "frameWorkDsId": "external~5071851982918898",
+    "name": "COVID_19_Vaccination_and_related_demographic_data - COVID_19_Vaccination_and_related_demographic_data",
+    "frameWorkDsId": "map~COVID_19_Vaccination_and_related_demographic_data_6052~6256868376564297",
     "useSelection": false,
     "filterByExtent": false
   }

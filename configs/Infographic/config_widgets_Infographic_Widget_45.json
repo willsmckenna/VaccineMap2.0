@@ -12,7 +12,7 @@
             "isClosable": true,
             "reorderEnabled": true,
             "title": "",
-            "height": 25.174055911083077,
+            "height": 30.22084544818889,
             "activeItemIndex": 0,
             "content": [
               {
@@ -20,11 +20,11 @@
                 "isClosable": true,
                 "componentName": "jimu grid",
                 "componentState": {
-                  "id": "7540026901819095-1"
+                  "id": "4383122438410556-1"
                 },
                 "reorderEnabled": true,
                 "title": "jimu grid",
-                "id": "7540026901819095-1"
+                "id": "4383122438410556-1"
               }
             ]
           },
@@ -33,7 +33,7 @@
             "isClosable": true,
             "reorderEnabled": true,
             "title": "",
-            "height": 41.958473320888004,
+            "height": 34.538304856751765,
             "activeItemIndex": 0,
             "content": [
               {
@@ -41,11 +41,11 @@
                 "isClosable": true,
                 "componentName": "jimu grid",
                 "componentState": {
-                  "id": "7540026901819095-3"
+                  "id": "4383122438410556-3"
                 },
                 "reorderEnabled": true,
                 "title": "jimu grid",
-                "id": "7540026901819095-3"
+                "id": "4383122438410556-3"
               }
             ]
           },
@@ -54,7 +54,7 @@
             "isClosable": true,
             "reorderEnabled": true,
             "title": "",
-            "height": 32.86747076802894,
+            "height": 35.24084969505936,
             "activeItemIndex": 0,
             "content": [
               {
@@ -62,11 +62,11 @@
                 "isClosable": true,
                 "componentName": "jimu grid",
                 "componentState": {
-                  "id": "7540026901819095-4"
+                  "id": "4383122438410556-4"
                 },
                 "reorderEnabled": true,
                 "title": "jimu grid",
-                "id": "7540026901819095-4"
+                "id": "4383122438410556-4"
               }
             ]
           }
@@ -76,7 +76,7 @@
   },
   "dijits": [
     {
-      "id": "7540026901819095-1",
+      "id": "4383122438410556-1",
       "type": "text",
       "visible": true,
       "config": {
@@ -102,7 +102,7 @@
       }
     },
     {
-      "id": "7540026901819095-2",
+      "id": "4383122438410556-2",
       "type": "image",
       "visible": false,
       "config": {
@@ -117,7 +117,7 @@
       }
     },
     {
-      "id": "7540026901819095-3",
+      "id": "4383122438410556-3",
       "type": "number",
       "visible": true,
       "config": {
@@ -153,8 +153,8 @@
             "config": {
               "type": "stat",
               "value": {
-                "type": "sum",
-                "field": "total_doses_daily"
+                "type": "max",
+                "field": "Total_Doses___Cumulative"
               }
             }
           }
@@ -162,7 +162,7 @@
       }
     },
     {
-      "id": "7540026901819095-4",
+      "id": "4383122438410556-4",
       "type": "text",
       "visible": true,
       "config": {
@@ -184,17 +184,17 @@
           "fontSize": 12,
           "textColor": "#fff"
         },
-        "text": "This number reflects the total number of doses given in the city of Chicago"
+        "text": "This number reflects the total number of all doses (whether first or second) given to date"
       }
     }
   ],
   "name": "number",
-  "wid": "7540026901819095",
+  "wid": "4383122438410556",
   "dataSource": {
-    "dataSourceType": "DATA_SOURCE_FEATURE_LAYER_FROM_MAP",
-    "name": "COVID-19 Vaccinations- CSV",
-    "layerId": "b1d8b389-f5fd-4539-9871-fa48c33e091c",
-    "useSelection": true,
+    "dataSourceType": "DATA_SOURCE_FROM_FRAMEWORK",
+    "name": "COVID_19_Vaccination_and_related_demographic_data - COVID_19_Vaccination_and_related_demographic_data",
+    "frameWorkDsId": "map~COVID_19_Vaccination_and_related_demographic_data_6052~6256868376564297",
+    "useSelection": false,
     "filterByExtent": false
   }
 }

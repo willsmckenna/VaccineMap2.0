@@ -1,0 +1,357 @@
+{
+  "hideLayersAfterWidgetClosed": true,
+  "labelTasks": "Tasks",
+  "labelResults": "Results",
+  "showFilterLabel": true,
+  "criteiraLabel": "Query criteria",
+  "spatialFilterLabel": "Spatial filters",
+  "queries": [
+    {
+      "url": "",
+      "name": "COVID-19 Vaccinations- CSV",
+      "icon": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "date",
+              "label": "date",
+              "dateFormat": "",
+              "shortType": "date",
+              "type": "esriFieldTypeDate"
+            },
+            "operator": "dateOperatorIsBetween",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value1": null,
+              "value2": null,
+              "virtualDate1": null,
+              "virtualDate2": null
+            },
+            "interactiveObj": {
+              "prompt": "Enter date to view related vaccine data on Map:",
+              "hint": "",
+              "cascade": "none",
+              "virtualDates1": [
+                "custom"
+              ],
+              "virtualDates2": [
+                "custom"
+              ]
+            },
+            "caseSensitive": false
+          },
+          {
+            "logicalOperator": "OR",
+            "parts": [
+              {
+                "fieldObj": {
+                  "name": "zip_code",
+                  "label": "zip_code",
+                  "dateFormat": "",
+                  "shortType": "string",
+                  "type": "esriFieldTypeString"
+                },
+                "operator": "stringOperatorIs",
+                "valueObj": {
+                  "isValid": true,
+                  "type": "value",
+                  "value": null
+                },
+                "interactiveObj": {
+                  "prompt": "Enter Zip Code:",
+                  "hint": "",
+                  "cascade": "none"
+                },
+                "caseSensitive": false
+              },
+              {
+                "fieldObj": {
+                  "name": "zip_code",
+                  "label": "zip_code",
+                  "dateFormat": "",
+                  "shortType": "string",
+                  "type": "esriFieldTypeString"
+                },
+                "operator": "stringOperatorIs",
+                "valueObj": {
+                  "isValid": true,
+                  "type": "value",
+                  "value": null
+                },
+                "interactiveObj": {
+                  "prompt": "(Optional) Additional Zip Code:",
+                  "hint": "",
+                  "cascade": "none"
+                },
+                "caseSensitive": false
+              },
+              {
+                "fieldObj": {
+                  "name": "zip_code",
+                  "label": "zip_code",
+                  "dateFormat": "",
+                  "shortType": "string",
+                  "type": "esriFieldTypeString"
+                },
+                "operator": "stringOperatorIs",
+                "valueObj": {
+                  "isValid": true,
+                  "type": "value",
+                  "value": null
+                },
+                "interactiveObj": {
+                  "prompt": "(Optional) Additional Zip Code:",
+                  "hint": "",
+                  "cascade": "none"
+                },
+                "caseSensitive": false
+              },
+              {
+                "fieldObj": {
+                  "name": "zip_code",
+                  "label": "zip_code",
+                  "dateFormat": "",
+                  "shortType": "string",
+                  "type": "esriFieldTypeString"
+                },
+                "operator": "stringOperatorIs",
+                "valueObj": {
+                  "isValid": true,
+                  "type": "value",
+                  "value": null
+                },
+                "interactiveObj": {
+                  "prompt": "(Optional) Additional Zip Code:",
+                  "hint": "",
+                  "cascade": "none"
+                },
+                "caseSensitive": false
+              }
+            ]
+          }
+        ],
+        "expr": "",
+        "displaySQL": ""
+      },
+      "showSQL": false,
+      "spatialFilter": {
+        "currentMapExtent": null,
+        "drawing": null,
+        "useFeatures": null,
+        "fullLayerExtent": null
+      },
+      "popupInfo": {
+        "title": "Vaccine Data for Zip Code {zip_code} on {date}",
+        "fieldInfos": [
+          {
+            "fieldName": "zip_code",
+            "label": "zip_code",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "date",
+            "label": "date",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "dateFormat": "longMonthDayYear"
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "total_doses_daily",
+            "label": "total doses daily",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "total_doses_cumulative",
+            "label": "total doses cumulative",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "F_1st_dose_daily",
+            "label": "1st dose daily",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "F_1st_dose_cumulative",
+            "label": "_1st_dose_cumulative",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "F_1st_dose_percent_population",
+            "label": "_1st_dose_percent_population",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "vaccine_series_completed_daily",
+            "label": "vaccine series completed daily",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "vaccine_series_completed_cumula",
+            "label": "vaccine series completed cumulative",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "vaccine_series_completed_percen",
+            "label": "vaccine series completed percent population",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "population",
+            "label": "population",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "zip_code_location",
+            "label": "zip_code_location",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "row_id",
+            "label": "row_id",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "ObjectId",
+            "label": "ObjectId",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          }
+        ],
+        "description": null,
+        "showAttachments": false,
+        "mediaInfos": [],
+        "readFromWebMap": false
+      },
+      "orderByFields": [
+        "date DESC"
+      ],
+      "useLayerSymbol": false,
+      "resultsSymbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "canModifySymbol": false,
+      "enableExport": true,
+      "defaultExpand": true,
+      "singleResultLayer": true,
+      "webMapLayerId": "b1d8b389-f5fd-4539-9871-fa48c33e091c",
+      "customResultName": false
+    }
+  ]
+}

@@ -227,6 +227,14 @@
             "uri": "widgets/Infographic/Widget",
             "config": "configs/Infographic/config_widgets_Infographic_Widget_38.json",
             "id": "widgets_Infographic_Widget_38"
+          },
+          {
+            "name": "Query",
+            "label": "View Map Data By Date For Comparison",
+            "version": "2.18",
+            "uri": "widgets/Query/Widget",
+            "config": "configs/Query/config_widgets_Query_Widget_52.json",
+            "id": "widgets_Query_Widget_52"
           }
         ],
         "placeholderIndex": 1,
@@ -239,11 +247,11 @@
         "widgets": [
           {
             "name": "Infographic",
-            "label": "Doses Per Day",
+            "label": "Vaccination Numbers By Day",
             "version": "2.18",
             "uri": "widgets/Infographic/Widget",
-            "config": "configs/Infographic/config_widgets_Infographic_Widget_46.json",
-            "id": "widgets_Infographic_Widget_46"
+            "config": "configs/Infographic/config_widgets_Infographic_Widget_53.json",
+            "id": "widgets_Infographic_Widget_53"
           }
         ],
         "placeholderIndex": 1,
@@ -290,11 +298,27 @@
         "widgets": [
           {
             "name": "Infographic",
-            "label": "Total Series Completed",
+            "label": "Total Doses By Race",
             "version": "2.18",
             "uri": "widgets/Infographic/Widget",
-            "config": "configs/Infographic/config_widgets_Infographic_Widget_47.json",
-            "id": "widgets_Infographic_Widget_47"
+            "config": "configs/Infographic/config_widgets_Infographic_Widget_49.json",
+            "id": "widgets_Infographic_Widget_49"
+          },
+          {
+            "name": "Infographic",
+            "label": "Total Doses Male/Female",
+            "version": "2.18",
+            "uri": "widgets/Infographic/Widget",
+            "config": "configs/Infographic/config_widgets_Infographic_Widget_50.json",
+            "id": "widgets_Infographic_Widget_50"
+          },
+          {
+            "name": "Infographic",
+            "label": "Total Doses By Age",
+            "version": "2.18",
+            "uri": "widgets/Infographic/Widget",
+            "config": "configs/Infographic/config_widgets_Infographic_Widget_51.json",
+            "id": "widgets_Infographic_Widget_51"
           }
         ],
         "visible": true,
@@ -1084,6 +1108,3668 @@
           },
           "typeIdField": ""
         }
+      },
+      "map~COVID_19_Vaccination_and_related_demographic_data_6052~6256868376564297": {
+        "type": "Features",
+        "isDynamic": false,
+        "label": "COVID_19_Vaccination_and_related_demographic_data - COVID_19_Vaccination_and_related_demographic_data",
+        "url": "https://services7.arcgis.com/8kZv9DESIQ1hYuyJ/arcgis/rest/services/COVID_19_Vaccination_and_related_demographic_data/FeatureServer/0",
+        "filterByExtent": false,
+        "resultRecordType": "serviceLimitation",
+        "dataSchema": {
+          "objectIdFieldName": "ObjectId",
+          "geometryType": "",
+          "displayFieldName": "",
+          "typeIdField": "",
+          "fields": [
+            {
+              "name": "Date",
+              "type": "esriFieldTypeDate",
+              "actualType": "datetime2",
+              "alias": "Date",
+              "sqlType": "sqlTypeTimestamp2",
+              "length": 8,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Total_Doses___Daily",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Total_Doses___Cumulative",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Cumulative",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "F1st_Dose___Daily",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "F1st_Dose___Cumulative",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Cumulative",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "F1st_Dose___Percent_Population",
+              "type": "esriFieldTypeDouble",
+              "actualType": "float",
+              "alias": "1st Dose - Percent Population",
+              "sqlType": "sqlTypeFloat",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Vaccine_Series_Completed___Dail",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Vaccine_Series_Completed___Cumu",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Cumulative",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Vaccine_Series_Completed___Perc",
+              "type": "esriFieldTypeDouble",
+              "actualType": "float",
+              "alias": "Vaccine Series Completed - Percent Population",
+              "sqlType": "sqlTypeFloat",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Total_Doses___Daily___Age_0_17",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily - Age 0-17",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Total_Doses___Daily___Age_18_29",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily - Age 18-29",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Total_Doses___Daily___Age_30_39",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily - Age 30-39",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Total_Doses___Daily___Age_40_49",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily - Age 40-49",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Total_Doses___Daily___Age_50_59",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily - Age 50-59",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Total_Doses___Daily___Age_60_69",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily - Age 60-69",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Total_Doses___Daily___Age_70_79",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily - Age 70-79",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Total_Doses___Daily___Age_80_",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily - Age 80+",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Total_Doses___Daily___Age_18_",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily - Age 18+",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Total_Doses___Daily___Age_65_",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily - Age 65+",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Total_Doses___Daily___Age_75_",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily - Age 75+",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Total_Doses___Daily___Unknown_A",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily - Unknown Age",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Total_Doses___Daily___Female",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily - Female",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Total_Doses___Daily___Male",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily - Male",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Total_Doses___Daily___Unknown_G",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily - Unknown Gender",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Total_Doses___Daily___Latinx",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily - Latinx",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Total_Doses___Daily___Asian_Non",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily - Asian Non-Latinx",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Total_Doses___Daily___Black_Non",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily - Black Non-Latinx",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Total_Doses___Daily___White_Non",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily - White Non-Latinx",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Total_Doses___Daily___Other_Non",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily - Other Non-Latinx",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Total_Doses___Daily___Unknown_R",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily - Unknown Race/Ethnicity",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "F1st_Dose___Daily___Age_0_17",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily - Age 0-17",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "F1st_Dose___Daily___Age_18_29",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily - Age 18-29",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "F1st_Dose___Daily___Age_30_39",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily - Age 30-39",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "F1st_Dose___Daily___Age_40_49",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily - Age 40-49",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "F1st_Dose___Daily___Age_50_59",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily - Age 50-59",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "F1st_Dose___Daily___Age_60_69",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily - Age 60-69",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "F1st_Dose___Daily___Age_70_79",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily - Age 70-79",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "F1st_Dose___Daily____Age_80_",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily -  Age 80+",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "F1st_Dose___Daily___Age_18_",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily - Age 18+",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "F1st_Dose___Daily___Age_65_",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily - Age 65+",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "F1st_Dose___Daily___Age_75_",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily - Age 75+",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "F1st_Dose___Daily___Unknown_Age",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily - Unknown Age",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "F1st_Dose___Daily___Female",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily - Female",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "F1st_Dose___Daily___Male",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily - Male",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "F1st_Dose___Daily___Unknown_Gen",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily - Unknown Gender",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "F1st_Dose___Daily___Latinx",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily - Latinx",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "F1st_Dose___Daily___Asian_Non_L",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily - Asian Non-Latinx",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "F1st_Dose___Daily___Black_Non_L",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily - Black Non-Latinx",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "F1st_Dose___Daily___White_Non_L",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily - White Non-Latinx",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "F1st_Dose___Daily___Other_Race_",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily - Other Race Non-Latinx",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "F1st_Dose___Daily___Unknown_Rac",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily - Unknown Race/Ethnicity",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Vaccine_Series_Completed___Da_1",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily - Age 0-17",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Vaccine_Series_Completed___Da_2",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily - Age 18-29",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Vaccine_Series_Completed___Da_3",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily - Age 30-39",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Vaccine_Series_Completed___Da_4",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily - Age 40-49",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Vaccine_Series_Completed___Da_5",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily - Age 50-59",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Vaccine_Series_Completed___Da_6",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily - Age 60-69",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Vaccine_Series_Completed___Da_7",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily - Age 70-79",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Vaccine_Series_Completed___Da_8",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily - Age 80+",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Vaccine_Series_Completed___Da_9",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily - Age 18+",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Vaccine_Series_Completed___D_10",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily - Age 65+",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Vaccine_Series_Completed___D_11",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily - Age 75+",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Vaccine_Series_Completed___D_12",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily - Unknown Age",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Vaccine_Series_Completed___D_13",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily - Female",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Vaccine_Series_Completed___D_14",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily - Male",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Vaccine_Series_Completed___D_15",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily - Unknown Gender",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Vaccine_Series_Completed___D_16",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily - Latinx",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Vaccine_Series_Completed___D_17",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily - Asian Non-Latinx",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Vaccine_Series_Completed___D_18",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily - Black Non-Latinx",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Vaccine_Series_Completed___D_19",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily - White Non-Latinx",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Vaccine_Series_Completed___D_20",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily - Other Race Non-Latinx",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Vaccine_Series_Completed___D_21",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily - Unknown Race/Ethnicity",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "ObjectId",
+              "type": "esriFieldTypeOID",
+              "actualType": "int",
+              "alias": "ObjectId",
+              "sqlType": "sqlTypeInteger",
+              "nullable": false,
+              "editable": false,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": true
+            }
+          ],
+          "orderByFields": [
+            "Date ASC"
+          ]
+        },
+        "id": "map~COVID_19_Vaccination_and_related_demographic_data_6052~6256868376564297"
+      },
+      "map~COVID_19_Vaccination_and_related_demographic_data_6052~2646011936291175": {
+        "type": "FeatureStatistics",
+        "isDynamic": false,
+        "label": "COVID_19_Vaccination_and_related_demographic_data- most recent",
+        "url": "https://services7.arcgis.com/8kZv9DESIQ1hYuyJ/arcgis/rest/services/COVID_19_Vaccination_and_related_demographic_data/FeatureServer/0",
+        "filterByExtent": false,
+        "filter": {
+          "logicalOperator": "AND",
+          "parts": [
+            {
+              "fieldObj": {
+                "name": "Date",
+                "label": "Date",
+                "dateFormat": "",
+                "shortType": "date",
+                "type": "esriFieldTypeDate"
+              },
+              "operator": "dateOperatorIsOn",
+              "valueObj": {
+                "value": "2021-03-04 00:00:00",
+                "virtualDate": "",
+                "enableTime": false,
+                "timeAccuracy": "",
+                "isValid": true,
+                "type": "value"
+              },
+              "interactiveObj": "",
+              "caseSensitive": false,
+              "displaySQL": "Date is on March 4, 2021",
+              "expr": "(Date BETWEEN '2021-03-04 06:00:00' AND '2021-03-05 06:00:00') AND (Date <> '2021-03-05 06:00:00')"
+            }
+          ],
+          "expr": "(Date BETWEEN '2021-03-04 06:00:00' AND '2021-03-05 06:00:00') AND (Date <> '2021-03-05 06:00:00')",
+          "displaySQL": "Date is on March 4, 2021"
+        },
+        "dataSchema": {
+          "objectIdFieldName": "ObjectId",
+          "geometryType": "",
+          "displayFieldName": "",
+          "typeIdField": "",
+          "statistics": [
+            {
+              "onStatisticField": "ObjectId",
+              "outStatisticFieldName": "STAT_COUNT",
+              "statisticType": "count"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Total_Doses___Cumulative",
+              "outStatisticFieldName": "TOTAL_DOSES___CUMULATIVE_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Cumulative",
+              "outStatisticFieldName": "F1ST_DOSE___CUMULATIVE_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Percent_Population",
+              "outStatisticFieldName": "F1ST_DOSE___PERCENT_POPULATION_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Dail",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___DAIL_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Cumu",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___CUMU_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Perc",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___PERC_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_0_17",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_0_17_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_18_29",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_18_29_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_30_39",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_30_39_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_40_49",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_40_49_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_50_59",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_50_59_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_60_69",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_60_69_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_70_79",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_70_79_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_80_",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_80__SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_18_",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_18__SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_65_",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_65__SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_75_",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_75__SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Unknown_A",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___UNKNOWN_A_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Female",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___FEMALE_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Male",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___MALE_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Unknown_G",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___UNKNOWN_G_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Latinx",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___LATINX_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Asian_Non",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___ASIAN_NON_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Black_Non",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___BLACK_NON_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___White_Non",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___WHITE_NON_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Other_Non",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___OTHER_NON_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Unknown_R",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___UNKNOWN_R_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Age_0_17",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___AGE_0_17_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Age_18_29",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___AGE_18_29_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Age_30_39",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___AGE_30_39_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Age_40_49",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___AGE_40_49_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Age_50_59",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___AGE_50_59_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Age_60_69",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___AGE_60_69_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Age_70_79",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___AGE_70_79_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily____Age_80_",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY____AGE_80__SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Age_18_",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___AGE_18__SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Age_65_",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___AGE_65__SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Age_75_",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___AGE_75__SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Unknown_Age",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___UNKNOWN_AGE_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Female",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___FEMALE_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Male",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___MALE_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Unknown_Gen",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___UNKNOWN_GEN_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Latinx",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___LATINX_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Asian_Non_L",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___ASIAN_NON_L_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Black_Non_L",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___BLACK_NON_L_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___White_Non_L",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___WHITE_NON_L_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Other_Race_",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___OTHER_RACE__SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Unknown_Rac",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___UNKNOWN_RAC_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Da_1",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___DA_1_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Da_2",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___DA_2_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Da_3",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___DA_3_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Da_4",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___DA_4_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Da_5",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___DA_5_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Da_6",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___DA_6_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Da_7",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___DA_7_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Da_8",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___DA_8_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Da_9",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___DA_9_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_10",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_10_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_11",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_11_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_12",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_12_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_13",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_13_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_14",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_14_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_15",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_15_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_16",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_16_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_17",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_17_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_18",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_18_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_19",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_19_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_20",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_20_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_21",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_21_SUM",
+              "statisticType": "sum"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Total_Doses___Cumulative",
+              "outStatisticFieldName": "TOTAL_DOSES___CUMULATIVE_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Cumulative",
+              "outStatisticFieldName": "F1ST_DOSE___CUMULATIVE_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Percent_Population",
+              "outStatisticFieldName": "F1ST_DOSE___PERCENT_POPULATION_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Dail",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___DAIL_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Cumu",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___CUMU_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Perc",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___PERC_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_0_17",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_0_17_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_18_29",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_18_29_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_30_39",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_30_39_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_40_49",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_40_49_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_50_59",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_50_59_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_60_69",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_60_69_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_70_79",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_70_79_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_80_",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_80__MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_18_",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_18__MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_65_",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_65__MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_75_",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_75__MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Unknown_A",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___UNKNOWN_A_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Female",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___FEMALE_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Male",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___MALE_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Unknown_G",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___UNKNOWN_G_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Latinx",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___LATINX_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Asian_Non",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___ASIAN_NON_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Black_Non",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___BLACK_NON_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___White_Non",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___WHITE_NON_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Other_Non",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___OTHER_NON_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Unknown_R",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___UNKNOWN_R_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Age_0_17",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___AGE_0_17_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Age_18_29",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___AGE_18_29_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Age_30_39",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___AGE_30_39_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Age_40_49",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___AGE_40_49_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Age_50_59",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___AGE_50_59_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Age_60_69",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___AGE_60_69_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Age_70_79",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___AGE_70_79_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily____Age_80_",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY____AGE_80__MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Age_18_",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___AGE_18__MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Age_65_",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___AGE_65__MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Age_75_",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___AGE_75__MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Unknown_Age",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___UNKNOWN_AGE_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Female",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___FEMALE_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Male",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___MALE_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Unknown_Gen",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___UNKNOWN_GEN_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Latinx",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___LATINX_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Asian_Non_L",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___ASIAN_NON_L_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Black_Non_L",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___BLACK_NON_L_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___White_Non_L",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___WHITE_NON_L_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Other_Race_",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___OTHER_RACE__MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Unknown_Rac",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___UNKNOWN_RAC_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Da_1",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___DA_1_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Da_2",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___DA_2_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Da_3",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___DA_3_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Da_4",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___DA_4_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Da_5",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___DA_5_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Da_6",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___DA_6_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Da_7",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___DA_7_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Da_8",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___DA_8_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Da_9",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___DA_9_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_10",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_10_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_11",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_11_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_12",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_12_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_13",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_13_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_14",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_14_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_15",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_15_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_16",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_16_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_17",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_17_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_18",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_18_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_19",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_19_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_20",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_20_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_21",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_21_MIN",
+              "statisticType": "min"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Total_Doses___Cumulative",
+              "outStatisticFieldName": "TOTAL_DOSES___CUMULATIVE_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Cumulative",
+              "outStatisticFieldName": "F1ST_DOSE___CUMULATIVE_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Percent_Population",
+              "outStatisticFieldName": "F1ST_DOSE___PERCENT_POPULATION_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Dail",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___DAIL_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Cumu",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___CUMU_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Perc",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___PERC_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_0_17",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_0_17_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_18_29",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_18_29_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_30_39",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_30_39_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_40_49",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_40_49_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_50_59",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_50_59_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_60_69",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_60_69_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_70_79",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_70_79_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_80_",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_80__MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_18_",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_18__MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_65_",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_65__MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_75_",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_75__MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Unknown_A",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___UNKNOWN_A_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Female",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___FEMALE_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Male",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___MALE_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Unknown_G",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___UNKNOWN_G_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Latinx",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___LATINX_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Asian_Non",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___ASIAN_NON_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Black_Non",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___BLACK_NON_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___White_Non",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___WHITE_NON_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Other_Non",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___OTHER_NON_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Unknown_R",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___UNKNOWN_R_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Age_0_17",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___AGE_0_17_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Age_18_29",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___AGE_18_29_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Age_30_39",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___AGE_30_39_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Age_40_49",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___AGE_40_49_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Age_50_59",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___AGE_50_59_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Age_60_69",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___AGE_60_69_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Age_70_79",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___AGE_70_79_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily____Age_80_",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY____AGE_80__MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Age_18_",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___AGE_18__MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Age_65_",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___AGE_65__MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Age_75_",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___AGE_75__MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Unknown_Age",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___UNKNOWN_AGE_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Female",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___FEMALE_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Male",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___MALE_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Unknown_Gen",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___UNKNOWN_GEN_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Latinx",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___LATINX_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Asian_Non_L",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___ASIAN_NON_L_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Black_Non_L",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___BLACK_NON_L_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___White_Non_L",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___WHITE_NON_L_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Other_Race_",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___OTHER_RACE__MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Unknown_Rac",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___UNKNOWN_RAC_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Da_1",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___DA_1_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Da_2",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___DA_2_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Da_3",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___DA_3_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Da_4",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___DA_4_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Da_5",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___DA_5_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Da_6",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___DA_6_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Da_7",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___DA_7_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Da_8",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___DA_8_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Da_9",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___DA_9_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_10",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_10_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_11",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_11_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_12",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_12_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_13",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_13_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_14",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_14_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_15",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_15_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_16",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_16_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_17",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_17_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_18",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_18_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_19",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_19_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_20",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_20_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_21",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_21_MAX",
+              "statisticType": "max"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Total_Doses___Cumulative",
+              "outStatisticFieldName": "TOTAL_DOSES___CUMULATIVE_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Cumulative",
+              "outStatisticFieldName": "F1ST_DOSE___CUMULATIVE_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Percent_Population",
+              "outStatisticFieldName": "F1ST_DOSE___PERCENT_POPULATION_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Dail",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___DAIL_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Cumu",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___CUMU_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Perc",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___PERC_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_0_17",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_0_17_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_18_29",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_18_29_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_30_39",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_30_39_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_40_49",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_40_49_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_50_59",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_50_59_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_60_69",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_60_69_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_70_79",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_70_79_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_80_",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_80__AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_18_",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_18__AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_65_",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_65__AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Age_75_",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___AGE_75__AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Unknown_A",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___UNKNOWN_A_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Female",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___FEMALE_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Male",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___MALE_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Unknown_G",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___UNKNOWN_G_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Latinx",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___LATINX_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Asian_Non",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___ASIAN_NON_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Black_Non",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___BLACK_NON_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___White_Non",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___WHITE_NON_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Other_Non",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___OTHER_NON_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Total_Doses___Daily___Unknown_R",
+              "outStatisticFieldName": "TOTAL_DOSES___DAILY___UNKNOWN_R_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Age_0_17",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___AGE_0_17_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Age_18_29",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___AGE_18_29_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Age_30_39",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___AGE_30_39_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Age_40_49",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___AGE_40_49_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Age_50_59",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___AGE_50_59_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Age_60_69",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___AGE_60_69_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Age_70_79",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___AGE_70_79_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily____Age_80_",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY____AGE_80__AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Age_18_",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___AGE_18__AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Age_65_",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___AGE_65__AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Age_75_",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___AGE_75__AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Unknown_Age",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___UNKNOWN_AGE_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Female",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___FEMALE_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Male",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___MALE_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Unknown_Gen",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___UNKNOWN_GEN_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Latinx",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___LATINX_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Asian_Non_L",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___ASIAN_NON_L_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Black_Non_L",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___BLACK_NON_L_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___White_Non_L",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___WHITE_NON_L_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Other_Race_",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___OTHER_RACE__AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "F1st_Dose___Daily___Unknown_Rac",
+              "outStatisticFieldName": "F1ST_DOSE___DAILY___UNKNOWN_RAC_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Da_1",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___DA_1_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Da_2",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___DA_2_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Da_3",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___DA_3_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Da_4",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___DA_4_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Da_5",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___DA_5_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Da_6",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___DA_6_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Da_7",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___DA_7_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Da_8",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___DA_8_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___Da_9",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___DA_9_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_10",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_10_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_11",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_11_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_12",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_12_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_13",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_13_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_14",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_14_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_15",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_15_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_16",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_16_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_17",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_17_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_18",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_18_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_19",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_19_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_20",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_20_AVG",
+              "statisticType": "avg"
+            },
+            {
+              "onStatisticField": "Vaccine_Series_Completed___D_21",
+              "outStatisticFieldName": "VACCINE_SERIES_COMPLETED___D_21_AVG",
+              "statisticType": "avg"
+            }
+          ],
+          "groupByFields": [],
+          "fields": [
+            {
+              "name": "Total_Doses___Daily",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Total_Doses___Cumulative",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Cumulative",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "F1st_Dose___Daily",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "F1st_Dose___Cumulative",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Cumulative",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "F1st_Dose___Percent_Population",
+              "type": "esriFieldTypeDouble",
+              "actualType": "float",
+              "alias": "1st Dose - Percent Population",
+              "sqlType": "sqlTypeFloat",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Vaccine_Series_Completed___Dail",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Vaccine_Series_Completed___Cumu",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Cumulative",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Vaccine_Series_Completed___Perc",
+              "type": "esriFieldTypeDouble",
+              "actualType": "float",
+              "alias": "Vaccine Series Completed - Percent Population",
+              "sqlType": "sqlTypeFloat",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Total_Doses___Daily___Age_0_17",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily - Age 0-17",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Total_Doses___Daily___Age_18_29",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily - Age 18-29",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Total_Doses___Daily___Age_30_39",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily - Age 30-39",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Total_Doses___Daily___Age_40_49",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily - Age 40-49",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Total_Doses___Daily___Age_50_59",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily - Age 50-59",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Total_Doses___Daily___Age_60_69",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily - Age 60-69",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Total_Doses___Daily___Age_70_79",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily - Age 70-79",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Total_Doses___Daily___Age_80_",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily - Age 80+",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Total_Doses___Daily___Age_18_",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily - Age 18+",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Total_Doses___Daily___Age_65_",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily - Age 65+",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Total_Doses___Daily___Age_75_",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily - Age 75+",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Total_Doses___Daily___Unknown_A",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily - Unknown Age",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Total_Doses___Daily___Female",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily - Female",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Total_Doses___Daily___Male",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily - Male",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Total_Doses___Daily___Unknown_G",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily - Unknown Gender",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Total_Doses___Daily___Latinx",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily - Latinx",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Total_Doses___Daily___Asian_Non",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily - Asian Non-Latinx",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Total_Doses___Daily___Black_Non",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily - Black Non-Latinx",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Total_Doses___Daily___White_Non",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily - White Non-Latinx",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Total_Doses___Daily___Other_Non",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily - Other Non-Latinx",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Total_Doses___Daily___Unknown_R",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Total Doses - Daily - Unknown Race/Ethnicity",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "F1st_Dose___Daily___Age_0_17",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily - Age 0-17",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "F1st_Dose___Daily___Age_18_29",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily - Age 18-29",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "F1st_Dose___Daily___Age_30_39",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily - Age 30-39",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "F1st_Dose___Daily___Age_40_49",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily - Age 40-49",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "F1st_Dose___Daily___Age_50_59",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily - Age 50-59",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "F1st_Dose___Daily___Age_60_69",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily - Age 60-69",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "F1st_Dose___Daily___Age_70_79",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily - Age 70-79",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "F1st_Dose___Daily____Age_80_",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily -  Age 80+",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "F1st_Dose___Daily___Age_18_",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily - Age 18+",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "F1st_Dose___Daily___Age_65_",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily - Age 65+",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "F1st_Dose___Daily___Age_75_",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily - Age 75+",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "F1st_Dose___Daily___Unknown_Age",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily - Unknown Age",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "F1st_Dose___Daily___Female",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily - Female",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "F1st_Dose___Daily___Male",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily - Male",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "F1st_Dose___Daily___Unknown_Gen",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily - Unknown Gender",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "F1st_Dose___Daily___Latinx",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily - Latinx",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "F1st_Dose___Daily___Asian_Non_L",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily - Asian Non-Latinx",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "F1st_Dose___Daily___Black_Non_L",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily - Black Non-Latinx",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "F1st_Dose___Daily___White_Non_L",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily - White Non-Latinx",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "F1st_Dose___Daily___Other_Race_",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily - Other Race Non-Latinx",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "F1st_Dose___Daily___Unknown_Rac",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "1st Dose - Daily - Unknown Race/Ethnicity",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Vaccine_Series_Completed___Da_1",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily - Age 0-17",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Vaccine_Series_Completed___Da_2",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily - Age 18-29",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Vaccine_Series_Completed___Da_3",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily - Age 30-39",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Vaccine_Series_Completed___Da_4",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily - Age 40-49",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Vaccine_Series_Completed___Da_5",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily - Age 50-59",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Vaccine_Series_Completed___Da_6",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily - Age 60-69",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Vaccine_Series_Completed___Da_7",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily - Age 70-79",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Vaccine_Series_Completed___Da_8",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily - Age 80+",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Vaccine_Series_Completed___Da_9",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily - Age 18+",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Vaccine_Series_Completed___D_10",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily - Age 65+",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Vaccine_Series_Completed___D_11",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily - Age 75+",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Vaccine_Series_Completed___D_12",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily - Unknown Age",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Vaccine_Series_Completed___D_13",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily - Female",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Vaccine_Series_Completed___D_14",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily - Male",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Vaccine_Series_Completed___D_15",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily - Unknown Gender",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Vaccine_Series_Completed___D_16",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily - Latinx",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Vaccine_Series_Completed___D_17",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily - Asian Non-Latinx",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Vaccine_Series_Completed___D_18",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily - Black Non-Latinx",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Vaccine_Series_Completed___D_19",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily - White Non-Latinx",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Vaccine_Series_Completed___D_20",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily - Other Race Non-Latinx",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Vaccine_Series_Completed___D_21",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Vaccine Series Completed - Daily - Unknown Race/Ethnicity",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            }
+          ]
+        },
+        "id": "map~COVID_19_Vaccination_and_related_demographic_data_6052~2646011936291175"
+      },
+      "widget~widgets_Query_Widget_52~0": {
+        "id": "widget~widgets_Query_Widget_52~0",
+        "type": "Features",
+        "label": "COVID-19 Vaccinations- CSV",
+        "dataSchema": {
+          "geometryType": "esriGeometryPoint",
+          "fields": [
+            {
+              "name": "zip_code",
+              "type": "esriFieldTypeString",
+              "actualType": "nvarchar",
+              "alias": "zip_code",
+              "sqlType": "sqlTypeNVarchar",
+              "length": 256,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "date",
+              "type": "esriFieldTypeDate",
+              "actualType": "datetime2",
+              "alias": "date",
+              "sqlType": "sqlTypeTimestamp2",
+              "length": 8,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "total_doses_daily",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "total_doses_daily",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "total_doses_cumulative",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "total_doses_cumulative",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "F_1st_dose_daily",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "_1st_dose_daily",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "F_1st_dose_cumulative",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "_1st_dose_cumulative",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "F_1st_dose_percent_population",
+              "type": "esriFieldTypeDouble",
+              "actualType": "float",
+              "alias": "_1st_dose_percent_population",
+              "sqlType": "sqlTypeFloat",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "vaccine_series_completed_daily",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "vaccine_series_completed_daily",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "vaccine_series_completed_cumula",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "vaccine_series_completed_cumulative",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "vaccine_series_completed_percen",
+              "type": "esriFieldTypeDouble",
+              "actualType": "float",
+              "alias": "vaccine_series_completed_percent_population",
+              "sqlType": "sqlTypeFloat",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "population",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "population",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "zip_code_location",
+              "type": "esriFieldTypeString",
+              "actualType": "nvarchar",
+              "alias": "zip_code_location",
+              "sqlType": "sqlTypeNVarchar",
+              "length": 4000,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "row_id",
+              "type": "esriFieldTypeString",
+              "actualType": "nvarchar",
+              "alias": "row_id",
+              "sqlType": "sqlTypeNVarchar",
+              "length": 4000,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "ObjectId",
+              "type": "esriFieldTypeOID",
+              "actualType": "int",
+              "alias": "ObjectId",
+              "sqlType": "sqlTypeInteger",
+              "nullable": false,
+              "editable": false,
+              "domain": null,
+              "defaultValue": null
+            }
+          ],
+          "displayField": "",
+          "objectIdField": {
+            "name": "ObjectId",
+            "type": "esriFieldTypeOID",
+            "actualType": "int",
+            "alias": "ObjectId",
+            "sqlType": "sqlTypeInteger",
+            "nullable": false,
+            "editable": false,
+            "domain": null,
+            "defaultValue": null
+          },
+          "typeIdField": ""
+        }
+      },
+      "external~5071851982918898": {
+        "type": "Features",
+        "portalUrl": "https://depaul-edu.maps.arcgis.com",
+        "itemId": "cc27c6f5594446a0a9faebd09f730368",
+        "isDynamic": false,
+        "label": "COVID-19_Vaccination_Locations",
+        "url": "https://services7.arcgis.com/8kZv9DESIQ1hYuyJ/arcgis/rest/services/COVIDVaccinationLocationsFinal/FeatureServer/0",
+        "filterByExtent": false,
+        "resultRecordType": "serviceLimitation",
+        "dataSchema": {
+          "objectIdFieldName": "ObjectId",
+          "geometryType": "esriGeometryPoint",
+          "displayFieldName": "",
+          "typeIdField": "",
+          "fields": [
+            {
+              "name": "Facility_ID",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Facility ID",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Facility_Name",
+              "type": "esriFieldTypeString",
+              "actualType": "nvarchar",
+              "alias": "Facility Name",
+              "sqlType": "sqlTypeNVarchar",
+              "length": 4000,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Address_1",
+              "type": "esriFieldTypeString",
+              "actualType": "nvarchar",
+              "alias": "Address 1",
+              "sqlType": "sqlTypeNVarchar",
+              "length": 4000,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Address_2",
+              "type": "esriFieldTypeString",
+              "actualType": "nvarchar",
+              "alias": "Address 2",
+              "sqlType": "sqlTypeNVarchar",
+              "length": 4000,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "City",
+              "type": "esriFieldTypeString",
+              "actualType": "nvarchar",
+              "alias": "City",
+              "sqlType": "sqlTypeNVarchar",
+              "length": 4000,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "State",
+              "type": "esriFieldTypeString",
+              "actualType": "nvarchar",
+              "alias": "State",
+              "sqlType": "sqlTypeNVarchar",
+              "length": 4000,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Postal_Code",
+              "type": "esriFieldTypeInteger",
+              "actualType": "int",
+              "alias": "Postal Code",
+              "sqlType": "sqlTypeInteger",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Country",
+              "type": "esriFieldTypeString",
+              "actualType": "nvarchar",
+              "alias": "Country",
+              "sqlType": "sqlTypeNVarchar",
+              "length": 4000,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "URL",
+              "type": "esriFieldTypeString",
+              "actualType": "nvarchar",
+              "alias": "URL",
+              "sqlType": "sqlTypeNVarchar",
+              "length": 4000,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Phone",
+              "type": "esriFieldTypeString",
+              "actualType": "nvarchar",
+              "alias": "Phone",
+              "sqlType": "sqlTypeNVarchar",
+              "length": 4000,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Begin_Date",
+              "type": "esriFieldTypeDate",
+              "actualType": "datetime2",
+              "alias": "Begin Date",
+              "sqlType": "sqlTypeTimestamp2",
+              "length": 8,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "End_Date",
+              "type": "esriFieldTypeDate",
+              "actualType": "datetime2",
+              "alias": "End Date",
+              "sqlType": "sqlTypeTimestamp2",
+              "length": 8,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Active",
+              "type": "esriFieldTypeString",
+              "actualType": "nvarchar",
+              "alias": "Active",
+              "sqlType": "sqlTypeNVarchar",
+              "length": 4000,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "City_Operated",
+              "type": "esriFieldTypeString",
+              "actualType": "nvarchar",
+              "alias": "City Operated",
+              "sqlType": "sqlTypeNVarchar",
+              "length": 4000,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Notes",
+              "type": "esriFieldTypeString",
+              "actualType": "nvarchar",
+              "alias": "Notes",
+              "sqlType": "sqlTypeNVarchar",
+              "length": 4000,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Location",
+              "type": "esriFieldTypeString",
+              "actualType": "nvarchar",
+              "alias": "Location",
+              "sqlType": "sqlTypeNVarchar",
+              "length": 4000,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "ObjectId",
+              "type": "esriFieldTypeOID",
+              "actualType": "int",
+              "alias": "ObjectId",
+              "sqlType": "sqlTypeInteger",
+              "nullable": false,
+              "editable": false,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": true
+            }
+          ],
+          "orderByFields": [
+            "Facility_ID ASC"
+          ]
+        },
+        "id": "external~5071851982918898"
       }
     },
     "settings": {}
@@ -1159,7 +4845,7 @@
                         "title": "",
                         "width": 41.632088520055326,
                         "activeItemIndex": 0,
-                        "height": 30.520420899394,
+                        "height": 27.822483140331553,
                         "isClosable": true,
                         "content": []
                       },
@@ -1168,7 +4854,7 @@
                         "reorderEnabled": true,
                         "title": "",
                         "id": "dd_group_8",
-                        "height": 38.44561306663996,
+                        "height": 35.92011937175089,
                         "activeItemIndex": 0,
                         "isClosable": true,
                         "content": []
@@ -1178,7 +4864,7 @@
                         "reorderEnabled": true,
                         "title": "",
                         "id": "dd_group_7",
-                        "height": 31.03396603396604,
+                        "height": 36.25739748791756,
                         "activeItemIndex": 0,
                         "isClosable": true,
                         "content": []
